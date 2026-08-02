@@ -31,7 +31,7 @@
 		}
 
 		.navMenu a {
-			color: #6e1b1e;
+			color: #0b2545;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
@@ -49,7 +49,7 @@
 
 		.navMenu a:hover {
 
-			color: #ad495b;
+			color: #0052CC;
 		}
 	</style>
 </head>
@@ -57,8 +57,15 @@
 <body>
 
 	<nav class="navMenu  border background">
-		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
-		<a id="welcome_center" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap"></i> Welcome Center</a>
+		<a id="room" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> room</a>
+		<a id="university" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap"></i> university</a>
+		<a id="studio" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap"></i> studio</a>
+		<a id="agenda" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap"></i> agenda</a>
+		<a id="watchlist" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Watchlist</a>
+		<a id="hobbies" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap"></i> Hobbies</a>
+		<a id="lumenarca" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap"></i> Lumenarca</a>
+		<a id="life" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap"></i> life</a>
+
 
 	</nav>
 
@@ -73,11 +80,26 @@
 
 		function navigate(id) {
 
-			if (id == 'home')
-				window.open("https://app.notion.com/p/Personal-Home-16adeacf175d49dbb3dd453f60ad32ee?source=copy_link", '_blank').focus();
+			if (id == 'room')
+				window.open("https://app.notion.com/p/ROOM-16adeacf175d49dbb3dd453f60ad32ee?source=copy_link", '_blank').focus();
 	
-			else if (id == 'welcome_center')
-				window.open("https://app.notion.com/p/Welcome-Center-01d0f023bf9c4ed38a9f2514e325d771?source=copy_link", '_blank').focus();
+			else if (id == 'university')
+				window.open("https://app.notion.com/p/UNIVERSITY-01d0f023bf9c4ed38a9f2514e325d771?source=copy_link", '_blank').focus();
+			else if (id == 'studio')
+				window.open("https://app.notion.com/p/STUDIO-3b04e7c68bf080508ea5d83236dcb944?source=copy_link", '_blank').focus();
+			else if (id == 'agenda')
+				window.open("https://app.notion.com/p/AGENDA-dc74d629d08149f998eff4492a1835ed?source=copy_link", '_blank').focus();
+			else if (id == 'watchlist')
+				window.open("https://app.notion.com/p/2c6ec157f6374a21bc4a52561cedf42b?v=6687bab3c51a4b3c83db86a101e778bf&source=copy_link", '_blank').focus();
+			else if (id == 'hobbies')
+				window.open("https://app.notion.com/p/HOBBIES-3b04e7c68bf080a3b2d7f44ea54e3e57?source=copy_link", '_blank').focus();
+			else if (id == 'lumenarca')
+				window.open("https://app.notion.com/p/LUMENARCA-8c13174994ae45d99bbebfc5f3785f08?source=copy_link", '_blank').focus();
+			else if (id == 'life')
+				window.open("https://app.notion.com/p/LIFE-3b04e7c68bf080b9b1efc97bd2d2f999?source=copy_linkS", '_blank').focus();
+
+
+
 
 			
 		}
